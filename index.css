@@ -2,17 +2,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f9f4ec;
   color: #3d3327;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
   padding: 1rem 1.5rem;
-  background: #fff7ee;
-  border-bottom: 1px solid #e7d8c6;
 }
 
 .brand {
@@ -21,10 +19,17 @@ header {
   font-weight: bold;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 nav a {
   text-decoration: none;
   color: #5a4734;
-  margin-left: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.65rem;
 }
 
 main {
@@ -35,9 +40,7 @@ main {
 }
 
 aside {
-  background: #fff;
   padding: 1rem;
-  border: 1px solid #e7d8c6;
   border-radius: 0.75rem;
 }
 
@@ -49,7 +52,6 @@ aside ul {
 
 aside li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f1e4d3;
 }
 
 aside li:last-child {
@@ -57,9 +59,7 @@ aside li:last-child {
 }
 
 article {
-  background: #fff;
   padding: 1.5rem;
-  border: 1px solid #e7d8c6;
   border-radius: 0.75rem;
 }
 
@@ -70,8 +70,6 @@ article h1 {
 .testimonial {
   margin: 1.5rem 0;
   padding: 1rem;
-  background: #fff7ee;
-  border-left: 4px solid #c48d60;
 }
 
 footer {
